@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - node_api
+      - ai_cognitive
+    networks:
+      - mynetwork
+
+  node_api:
+    build: ./node_api
+    ports:
+      - "3001:3001"
+    networks:
+      - mynetwork
+
+  ai_cognitive:
+    build: ./ai_cognitive
+    ports:
+      - "8080:80"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

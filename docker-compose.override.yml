@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  node_api:
+    hostname: node_api
+
+  ai_cognitive:
+    hostname: ai_cognitive
