@@ -51,7 +51,3 @@ Si vous souhaitez supprimer les conteneurs et les volumes associés, utilisez la
  ```
 
 Cela arrêtera et supprimera les conteneurs, ainsi que les volumes Docker associés.
-
----
-
-N'hésitez pas à personnaliser ce fichier README en fonction des détails spécifiques de ton projet et des commandes Docker que tu utilises.
