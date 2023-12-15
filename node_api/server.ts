@@ -26,8 +26,8 @@ app.use((req, res, next) => {
 
 app.post('/score', async (req, res) => {
     const requestBody = req.body;
-    const apiUrl = 'http://094c4f06-cf15-4f70-acec-bbc6dc47a4b8.francecentral.azurecontainer.io/score';
-    const token = 'R6wichgcApXdnfH2tPMz8OPZNJtZfto3';
+    const apiUrl = 'http://301a39f9-eb98-49e8-91f3-cff42a9da731.francecentral.azurecontainer.io/score';
+    const token = 'rEL9lU2F63QH45smSmY0zcHQKd7qo64V';
 
     try {
         const response = await axios.post(apiUrl, requestBody, {
